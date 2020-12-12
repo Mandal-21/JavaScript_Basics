@@ -19,6 +19,7 @@
         let seconds;
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         setInterval(() => {
+            // Initialising current date
             a = new Date();
             actualDate = a.toLocaleDateString(undefined, options)
             if (a.getSeconds() < 10){
